@@ -41,5 +41,12 @@ public class Main{
         /*묵시적으로 형 변환되었더라도 instanceof 통한 메소드의 피연산자는 생성된 하위타입이 된다.*/
         /* 객체 instanceof 분류  : instance instanceof class*/
         System.out.println(testA instanceof ExtendsTestSubSubClass);
+
+        Integer intA = new Integer(10);
+        Integer intB = intA;
+
+        intA = intA /new Integer(2);
+        System.out.println(intA.intValue()+intB.intValue());
+
     }
 }
