@@ -17,14 +17,29 @@ public class Main{
         */
 
         /* 묵시적 형변환 발생 */
-        ExtendsTestSuperClass extendsTestSuperClass = new ExtendsTestSubclass();
+        ExtendsTestSuperClass extendsTestSuperClass = new ExtendsTestSubClass();
         extendsTestSuperClass.method();
         /* 명시적 형변환 상속관계일때만 가능하지~ */
-        ExtendsTestSubclass castingTest = (ExtendsTestSubclass) extendsTestSuperClass;
+        ExtendsTestSubClass castingTest = (ExtendsTestSubClass) extendsTestSuperClass;
         castingTest.subClassMethod();
 
         /* 그리고 하위클래스들 생성될때마다 힙에 상위클래스들도 계속 생성되는거 콘솔에 보이지~? */
-        ExtendsTestSubclass testSubclass = new ExtendsTestSubclass();
+        ExtendsTestSubClass testSubclass = new ExtendsTestSubClass();
         testSubclass.subClassMethod();
+
+        System.out.println("================");
+        new ExtendsTestSubSubClass();
+        System.out.println("================");
+
+        /*묵시적형변환*/
+        ExtendsTestSuperClass testA = new ExtendsTestSubClass();
+        testA.exec();
+        ExtendsTestSubClass testB = new ExtendsTestSubClass();
+        testB.subClassMethod();
+
+        Object obj = new Object();
+        /*묵시적으로 형 변환되었더라도 instanceof 통한 메소드의 피연산자는 생성된 하위타입이 된다.*/
+        /* 객체 instanceof 분류  : instance instanceof class*/
+        System.out.println(testA instanceof ExtendsTestSubSubClass);
     }
 }
