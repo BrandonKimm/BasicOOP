@@ -37,7 +37,6 @@ public class Main{
         ExtendsTestSubClass testB = new ExtendsTestSubClass();
         testB.subClassMethod();
 
-        Object obj = new Object();
         /*묵시적으로 형 변환되었더라도 instanceof 통한 메소드의 피연산자는 생성된 하위타입이 된다.*/
         /* 객체 instanceof 분류  : instance instanceof class*/
         System.out.println(testA instanceof ExtendsTestSubSubClass);
