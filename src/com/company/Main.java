@@ -42,11 +42,11 @@ public class Main{
         /* 객체 instanceof 분류  : instance instanceof class*/
         System.out.println(testA instanceof ExtendsTestSubSubClass);
 
-        Integer intA = new Integer(10);
-        Integer intB = intA;
 
-        intA = intA /new Integer(2);
-        System.out.println(intA.intValue()+intB.intValue());
+
+        //TestInterface a = new TestInterface() ;
+
+        ExtendsTestSubClass.exec();
 
     }
 }

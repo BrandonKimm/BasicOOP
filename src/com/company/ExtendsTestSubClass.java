@@ -1,6 +1,18 @@
 package com.company;
 
 public class ExtendsTestSubClass extends ExtendsTestSuperClass {
+
+    /**
+     * 두번다시 잊지말자
+     * class변수 / instance 변수
+     * 생각해봐 클래스에 static으로 붙으면 클래스가 로드될떄 같이 초기화되거나 지정한 값으로 사용되겠지 지
+     * 그리고 앞으로 생성되는 모든 데이터에서 전역으로 관리되겠지! 스태틱이니까 클래스변수인거고
+     *
+     * instance 변수는 물론 선언만 해두겠지만 객체가 각각 생성 될때마다 별도로 다 하나씩 객체마다 가지고있는 변수야
+     * 이제 그만 좀 헷갈려라 이 바보야 */
+    static int classVar = 10 ;
+    int instanceVar =10;
+
     public ExtendsTestSubClass() {
         System.out.println("TestSubClassConstructor");
     }

@@ -1,6 +1,7 @@
 package com.company;
 
 public class ExtendsTestSubSubClass extends ExtendsTestSubClass {
+
     public ExtendsTestSubSubClass() {
         System.out.println("ExtendsTestSubSubClass");
     }
