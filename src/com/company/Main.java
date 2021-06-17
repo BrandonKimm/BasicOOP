@@ -47,5 +47,11 @@ public class Main{
 
         ExtendsTestSubClass.exec();
 
+        ExtendsTestSuperClass etSuper = new ExtendsTestSubClass();
+        ExtendsTestSubClass etSub = new ExtendsTestSubClass();
+        etSub.subClassMethod();
+        /* 오버라이딩안된 하위클래스의 메소드는  */
+        ((ExtendsTestSubClass)etSuper).subClassMethod();
+
     }
 }
